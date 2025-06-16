@@ -1,2 +1,1 @@
-// React App JavaScript placeholder
-console.log('App loaded');
+console.log('✅ JS Loaded');
