@@ -2,16 +2,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TCB Metal Order App</title>
-  <script defer src="static/js/main.js"></script>
-  <link rel="stylesheet" href="static/css/main.css" />
+  <script defer src="./static/js/main.js"></script>
+  <link rel="stylesheet" href="./static/css/main.css" />
 </head>
 <body>
-  <div id="root">
+  <div id="app">
     <h1>TCB Metal Order App (Safe Mode)</h1>
-    <p>Built for GitHub Pages with working structure.</p>
+    <label>Shed Type:
+      <select id="shedType">
+        <option value="">Select...</option>
+        <option>8x12 Lofted</option>
+        <option>10x16 Studio</option>
+        <option>12x24 Quaker</option>
+        <option>14x32 Cabin</option>
+      </select>
+    </label><br><br>
+    <label>Salesperson:
+      <select id="salesperson">
+        <option>Adam</option>
+        <option>Devon</option>
+      </select>
+    </label><br><br>
+    <label>Ordered By:
+      <select id="orderedBy">
+        <option>Jalon</option>
+        <option>Jonny</option>
+        <option>Joe</option>
+        <option>James</option>
+      </select>
+    </label><br><br>
+    <label>Supplier:
+      <select id="supplier">
+        <option>Watson Metals</option>
+        <option>Central States</option>
+      </select>
+    </label><br><br>
+    <label>Panel Type:
+      <select id="panelType">
+        <option>Wave</option>
+        <option>Rib</option>
+        <option>Standing Seam</option>
+      </select>
+    </label><br><br>
+    <label>Panel Color:
+      <select id="color">
+        <option>Charcoal</option>
+        <option>Burgundy</option>
+        <option>Galvalume</option>
+      </select>
+    </label><br><br>
+    <label>Panel Finish:
+      <select id="finish">
+        <option>Gloss</option>
+        <option>Matte</option>
+      </select>
+    </label><br><br>
+    <button onclick="alert('✅ Safe Mode: Order simulated. No email sent.')">Place Order</button>
   </div>
 </body>
 </html>
