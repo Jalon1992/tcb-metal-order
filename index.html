@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TCB Metal Order Form</title>
+  <script defer src="main.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <img src="logo.svg" alt="Twin City Barns" style="height: 60px; margin-bottom: 1rem;" />
+    <h1>TCB Metal Order</h1>
+    <form id="orderForm">
+      <label>Shed Type:
+        <select name="shed">
+          <option>8x12 Lofted</option><option>10x16 Studio</option><option>12x24 Quaker</option>
+        </select>
+      </label>
+      <label>Salesperson:
+        <select name="salesperson">
+          <option>Adam</option><option>Devon</option>
+        </select>
+      </label>
+      <label>Ordered By:
+        <select name="orderedBy">
+          <option>Jalon</option><option>Jonny</option><option>Joe</option><option>James</option>
+        </select>
+      </label>
+      <label>Supplier:
+        <select name="supplier">
+          <option>Watson Metals</option><option>Central States</option>
+        </select>
+      </label>
+      <label>Panel Type:
+        <select name="panelType">
+          <option>Wave</option><option>Rib</option><option>Standing Seam</option>
+        </select>
+      </label>
+      <label>Panel Color:
+        <select name="color">
+          <option>Charcoal</option><option>Burgundy</option><option>Galvalume</option>
+        </select>
+      </label>
+      <label>Panel Finish:
+        <select name="finish">
+          <option>Gloss</option><option>Matte</option>
+        </select>
+      </label>
+      <button type="button" onclick="submitOrder()">Place Order</button>
+    </form>
+    <p id="status"></p>
+  </div>
+</body>
+</html>
